@@ -1,0 +1,17 @@
+[workspace.package]
+license = "MIT-0"
+authors = ["Parity Technologies <admin@parity.io>"]
+homepage = "https://substrate.io"
+repository = "https://github.com/paritytech/polkadot-sdk-minimal-template.git"
+edition = "2021"
+
+[workspace]
+members = [
+    "node",
+    "pallets/template",
+    "runtime",
+]
+resolver = "2"
+
+[workspace.dependencies]
+serde_json = { version = "1.0.114", default-features = false }
